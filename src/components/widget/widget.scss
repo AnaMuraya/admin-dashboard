@@ -8,3 +8,43 @@
     border-radius: 10px;
     height: 100px;
 }
+.left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .title{
+        font-weight: bold;
+        font-style: 14px;
+        color: rgb(173, 173, 173);
+    }
+    .counter{
+        font-style: 28px;
+        font-weight: 300;
+    }
+    .link{
+        width: max-content;
+        font-style: 12px;
+        border-bottom: 1px solid gray;
+    }
+    .percentage{
+        display: flex;
+        align-items: center;
+        font-style: 14px;
+
+        &.positive{
+            color: rgb(168, 224, 85);
+        }
+        &.negative{
+            color: rgb(255, 81, 0);
+        }
+    }
+    .icon{
+        font-style: 18px;
+        padding: 5px;
+        // background-color: rgba(0, 128, 128, 0.178);
+        border-radius: 5px;
+        align-self: flex-end;
+
+    }
+}
